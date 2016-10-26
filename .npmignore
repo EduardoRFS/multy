@@ -1,0 +1,6 @@
+test/*
+test-base/*
+nodu_modules/*
+.git/*
+.gitignore/*
+yarn.lock

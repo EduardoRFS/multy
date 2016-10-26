@@ -1,16 +1,17 @@
 {
-  "name": "koa-multy",
+  "name": "multy",
   "version": "0.1.0",
-  "description": "Koa multipart form",
+  "description": "Koa/Express multipart form",
   "main": "lib/index.js",
   "scripts": {
     "test": "ava"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eduardorfs/koa-multy.git"
+    "url": "git+https://github.com/eduardorfs/multy.git"
   },
   "keywords": [
+    "express",
     "koa",
     "multipart",
     "form",
@@ -20,9 +21,9 @@
   "author": "EduardoRFS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eduardorfs/koa-multy/issues"
+    "url": "https://github.com/eduardorfs/multy/issues"
   },
-  "homepage": "https://github.com/eduardorfs/koa-multy#readme",
+  "homepage": "https://github.com/eduardorfs/multy#readme",
   "dependencies": {
     "busboy": "^0.2.13",
     "concat-stream": "^1.5.2",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "ava": "^0.16.0",
+    "express": "^4.14.0",
     "koa": "next",
     "supertest": "^2.0.1",
     "supertest-as-promised": "^4.0.0"
