@@ -1,14 +1,3 @@
-# Usage
-
-```javascript
-  var Multy = require('multy')
-  app.use(Multy())
-```
-
-# Example
-
-```javascript
-// on koa v2, works as well in express with req.body
 const fs = require('fs')
 const Multy = require('multy')
 const app = new (require('koa'))()
@@ -17,6 +6,15 @@ const router = require('koa-Router')()
 app.use(router)
 
 router.use(Multy())
+router.get('/', ctx => {
+  ctx.body = `
+    <form action="/" method="post" enctype="multipart/form-data">
+      Select file to upload:
+      <input type="file" name="file">
+      <input type="submit" value="Upload" name="submit">
+    </form>
+  `
+})
 router.post('/', ctx => {
   const { file } = ctx.request.body
   const stream = fs.createWriteStream('potato.jpg')
@@ -29,5 +27,3 @@ router.post('/', ctx => {
   })
 })
 app.listen(3000)
-
-```
