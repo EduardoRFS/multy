@@ -1,8 +1,13 @@
+## Installation
+```
+npm install multy
+```
+
 # Usage
 
 `multy` will add all parts to `req.body` or `ctx.body`.
 
-Parts is added in EXACTLY same order as received, a important to mix of file and text in same form.
+Parts is added in EXACTLY same order as received, important to mix of file and text in same form.
 
 ```javascript
   var Multy = require('multy')
