@@ -1,6 +1,6 @@
 {
   "name": "multy",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Koa(v2)/Express middleware for handle multipart form",
   "main": "lib/index.js",
   "scripts": {

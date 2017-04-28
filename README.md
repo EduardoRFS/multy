@@ -1,10 +1,14 @@
 # Usage
 
+`multy` will add all parts to `req.body` or `ctx.body`.
+
+Parts is added in EXACTLY same order as received, a important to mix of file and text in same form.
+
 ```javascript
   var Multy = require('multy')
-  app.use(Multy())
+  app.use(Multy(options))
 ```
-
+`options` is same as [busboy](https://github.com/mscdex/busboy#api)
 # Example
 
 ```javascript
